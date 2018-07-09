@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<songs>
+    <song>
+        <id>0</id>
+        <title>Letnisko</title>
+        <likes>0</likes>
+    </song>
+    <song>
+        <id>1</id>
+        <title>Letnie niebo</title>
+        <likes>1</likes>
+        <comment>
+            <id>0</id>
+            <content>slba</content>
+        </comment>
+    </song>
+    <counter>0</counter>
+</songs>
