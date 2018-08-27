@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <songs>
     <song>
+        <date>2018-07-17T11:32:08.485+02:00</date>
         <id>0</id>
-        <title>Letnisko</title>
         <likes>0</likes>
+        <title>Letnisko</title>
     </song>
     <song>
+        <date>2018-07-17T11:32:08.485+02:00</date>
         <id>1</id>
+        <likes>0</likes>
         <title>Letnie niebo</title>
-        <likes>1</likes>
-        <comment>
-            <id>0</id>
-            <content>slba</content>
-        </comment>
     </song>
-    <counter>0</counter>
 </songs>

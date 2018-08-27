@@ -2,28 +2,55 @@ package com.rob.Models;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @XmlRootElement(name="song")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Song {
+   // @XmlElement
     private int id;
-    private static int counterSongs;
+   // @XmlElement
+    private static int counter;
+    //@XmlElement
     private String title;
+    //@XmlElement
     private int likes;
-
+    @XmlElement
     private List<String> commentListStrings = new ArrayList<String>();
+    private Date date;
 
-    @XmlElement(name="comment")
+   // @XmlElement(name="comment")
     private List<Comment> commentList = new ArrayList<Comment>();
 
     public Song() {
-        this.id = counterSongs++;
+        this.date=new Date();
+    }
+
+    @Override
+    public String toString() {
+        return "Song{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", likes=" + likes +
+                ", commentListStrings=" + commentListStrings +
+                ", date=" + date +
+                ", commentList=" + commentList +
+                '}';
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public Song(String title){
         this.title = title;
-        this.id = counterSongs++;
+        this.id = counter++;
+        this.date=new Date();
     }
 
     public void addCommentString(){
@@ -78,13 +105,4 @@ public class Song {
         this.likes = likes;
     }
 
-    @Override
-    public String toString() {
-        return "Song{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", likes=" + likes +
-                ", commentList=" + commentList +
-                '}';
-    }
 }

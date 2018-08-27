@@ -72,7 +72,7 @@ public class App {
     }
 
 
-    static void menu() {
+    private static void menu() {
         System.out.println("Menu of song manager. Please enter the number");
         System.out.println("1: Display songs");
         System.out.println("2: Add Song");
